@@ -10,7 +10,7 @@ const PORTFOLIO = {
     { label: "Status", status: "Available immediately" },
   ],
   email: "vishnupriyadharsan21@gmail.com",
-  linkedin: "https://www.linkedin.com/in/your-profile",
+  linkedin: "https://www.linkedin.com/in/vishnu-priyadharsan",
   resumeUrl: "",
 
   summary:
