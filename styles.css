@@ -8,6 +8,10 @@
   --card: #ffffff;
   --link: #2383e2;
   --shadow: rgba(15, 15, 15, 0.1) 0 0 0 1px, rgba(15, 15, 15, 0.1) 0 2px 4px;
+  --accent: #2d8a6e;
+  --cover:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.25), transparent 40%),
+    linear-gradient(120deg, #0f5132 0%, #2d8a6e 45%, #6fb7a3 75%, #d7e8c6 100%);
 
   --gray-bg: rgba(227, 226, 224, 0.6); --gray-fg: #32302c;
   --blue-bg: #d3e5ef; --blue-fg: #183347;
@@ -64,16 +68,14 @@ a { color: inherit; }
 /* Cover + page */
 .cover {
   height: 28vh; min-height: 180px;
-  background:
-    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.25), transparent 40%),
-    linear-gradient(120deg, #0f5132 0%, #2d8a6e 45%, #6fb7a3 75%, #d7e8c6 100%);
+  background: var(--cover);
 }
 .page { width: min(900px, 100% - 48px); margin: 0 auto; padding-bottom: 120px; }
 .page-icon {
   width: 96px; height: 96px; margin-top: -48px; margin-bottom: 12px;
   display: grid; place-items: center; border-radius: 8px;
   background: var(--bg); box-shadow: var(--shadow);
-  font-size: 2.2rem; font-weight: 700; color: #2d8a6e; position: relative;
+  font-size: 2.2rem; font-weight: 700; color: var(--accent); position: relative;
 }
 h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-top: 8px; }
 .headline { color: var(--muted); font-size: 1.05rem; margin: 6px 0 20px; }
@@ -91,7 +93,7 @@ h4 { font-size: 1rem; font-weight: 600; line-height: 1.35; }
 .prop-label { width: 180px; flex-shrink: 0; color: var(--muted); font-size: 0.9rem; padding-top: 3px; }
 .prop-value { display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.95rem; padding-top: 2px; }
 .status { display: inline-flex; align-items: center; gap: 6px; padding: 0 8px; border-radius: 10px; background: var(--green-bg); color: var(--green-fg); font-size: 0.85rem; }
-.dot { width: 8px; height: 8px; border-radius: 50%; background: #2d8a6e; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
 
 /* Tags */
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -110,13 +112,13 @@ h4 { font-size: 1rem; font-weight: 600; line-height: 1.35; }
 .callout-mark {
   flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
   display: grid; place-items: center; font-size: 0.8rem; font-weight: 700;
-  background: #2d8a6e; color: #fff; margin-top: 2px;
+  background: var(--accent); color: #fff; margin-top: 2px;
 }
 
 /* Highlights */
 .highlights { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 8px; }
 .highlight { padding: 14px; border: 1px solid var(--border); border-radius: 6px; }
-.highlight strong { display: block; font-size: 1.35rem; font-weight: 700; color: #2d8a6e; }
+.highlight strong { display: block; font-size: 1.35rem; font-weight: 700; color: var(--accent); }
 .highlight span { font-size: 0.82rem; color: var(--muted); line-height: 1.4; display: block; }
 
 /* Services */
@@ -175,7 +177,7 @@ h4 { font-size: 1rem; font-weight: 600; line-height: 1.35; }
 .link { color: var(--link); text-decoration: none; border-bottom: 1px solid currentColor; }
 .btn {
   display: inline-block; margin-top: 24px; padding: 6px 14px; border-radius: 4px;
-  background: #2d8a6e; color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500;
+  background: var(--accent); color: #fff; text-decoration: none; font-size: 0.9rem; font-weight: 500;
 }
 .footer { margin-top: 60px; color: var(--muted); font-size: 0.85rem; }
 

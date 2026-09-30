@@ -1,5 +1,6 @@
 (function () {
   const d = PORTFOLIO;
+  document.documentElement.dataset.design = new URLSearchParams(location.search).get("design") || "consulting";
   const $ = (id) => document.getElementById(id);
   const el = (tag, cls, text) => {
     const node = document.createElement(tag);

@@ -1,0 +1,117 @@
+/* Alternative designs, selected with ?design=<name>. "notion" falls through to the base styles. */
+
+/* These designs fix their own palette, so the dark-mode toggle only applies to the Notion look. */
+:root[data-design]:not([data-design="notion"]) #theme-toggle { display: none; }
+
+/* ---------- 2. Editorial: think-tank research report ---------- */
+:root[data-design="editorial"] {
+  --bg: #fbf8f3; --text: #1f1d1a; --muted: #6d665e; --border: rgba(31, 29, 26, 0.14);
+  --hover: rgba(155, 44, 44, 0.05); --callout: #f2ece1; --card: #fffdf9; --link: #9b2c2c;
+  --accent: #9b2c2c; --shadow: none;
+  --cover: linear-gradient(#1f1d1a, #1f1d1a);
+  --gray-bg: #ece6da; --gray-fg: #3b3630;
+  --blue-bg: #e9e1d3; --blue-fg: #4a3b26; --green-bg: #e4e8dc; --green-fg: #2f3a24;
+  --orange-bg: #f3dfd6; --orange-fg: #7a2a1f; --purple-bg: #e8e0e6; --purple-fg: #4a2a3f;
+}
+[data-design="editorial"] body { font-family: Georgia, "Times New Roman", serif; }
+[data-design="editorial"] .cover { height: 10px; min-height: 0; }
+[data-design="editorial"] .page-icon {
+  margin-top: 48px; width: auto; height: auto; box-shadow: none; background: none;
+  font-size: 0.8rem; letter-spacing: 0.3em; justify-content: start; color: var(--accent);
+  font-family: "Segoe UI", sans-serif; font-weight: 700;
+}
+[data-design="editorial"] .page-icon::after { content: " · PORTFOLIO"; }
+[data-design="editorial"] h1 { font-size: 3.4rem; font-weight: 400; letter-spacing: -0.02em; }
+[data-design="editorial"] .headline { font-style: italic; font-size: 1.2rem; }
+[data-design="editorial"] h2 {
+  font-weight: 400; font-style: italic; font-size: 1.9rem;
+  border-bottom: none; border-top: 2px solid var(--text); padding-top: 14px;
+}
+[data-design="editorial"] .card { box-shadow: none; border: 1px solid var(--border); border-top: 3px solid var(--accent); border-radius: 0; }
+[data-design="editorial"] .card-band { height: auto; padding: 14px 14px 0; background: none !important; color: var(--accent); font-style: italic; }
+[data-design="editorial"] .highlight { border: none; border-left: 2px solid var(--accent); border-radius: 0; }
+[data-design="editorial"] .highlight strong { font-weight: 400; font-size: 2rem; }
+[data-design="editorial"] .service { border-radius: 0; background: var(--card); }
+[data-design="editorial"] .callout { border-left: 3px solid var(--accent); border-radius: 0; }
+[data-design="editorial"] .tag { font-family: "Segoe UI", sans-serif; border-radius: 0; }
+[data-design="editorial"] .prop-label { font-family: "Segoe UI", sans-serif; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.12em; }
+
+/* ---------- 3. Terminal: dark financial-data look ---------- */
+:root[data-design="terminal"] {
+  --bg: #0a0e0c; --text: #d6e2db; --muted: #7d8f85; --border: #1d2923;
+  --hover: rgba(61, 220, 132, 0.06); --callout: #101814; --card: #0f1512; --link: #3ddc84;
+  --accent: #3ddc84; --shadow: 0 0 0 1px #1d2923;
+  --cover:
+    linear-gradient(rgba(61, 220, 132, 0.08) 1px, transparent 1px) 0 0 / 100% 28px,
+    linear-gradient(90deg, rgba(61, 220, 132, 0.08) 1px, transparent 1px) 0 0 / 28px 100%,
+    radial-gradient(ellipse at 70% 120%, rgba(61, 220, 132, 0.35), transparent 60%), #0a0e0c;
+  --gray-bg: #18211c; --gray-fg: #b9c7bf;
+  --blue-bg: #0f2433; --blue-fg: #6cc4ff; --green-bg: #0f2a1c; --green-fg: #3ddc84;
+  --orange-bg: #2e1f0c; --orange-fg: #ffb454; --purple-bg: #231a33; --purple-fg: #c39bff;
+}
+[data-design="terminal"] body { font-family: "Segoe UI", system-ui, sans-serif; }
+[data-design="terminal"] h1, [data-design="terminal"] h2, [data-design="terminal"] .highlight strong,
+[data-design="terminal"] .card-band, [data-design="terminal"] .page-icon, [data-design="terminal"] .view-tab {
+  font-family: Consolas, "Cascadia Mono", "SF Mono", monospace;
+}
+[data-design="terminal"] .topbar { background: var(--bg); border-bottom: 1px solid var(--border); }
+[data-design="terminal"] .page-icon { background: #0f1512; border: 1px solid var(--accent); box-shadow: 0 0 24px rgba(61, 220, 132, 0.25); }
+[data-design="terminal"] h2::before { content: "> "; color: var(--accent); }
+[data-design="terminal"] .highlight { background: var(--card); }
+[data-design="terminal"] .highlight strong { font-size: 1.6rem; }
+[data-design="terminal"] .card-band { border-bottom: 1px solid var(--border); }
+[data-design="terminal"] .callout-mark { color: #0a0e0c; }
+[data-design="terminal"] .btn { color: #0a0e0c; }
+
+/* ---------- 4. Consulting: navy, structured, numbers-first ---------- */
+:root[data-design="consulting"] {
+  --bg: #ffffff; --text: #0b1f3a; --muted: #5a6b82; --border: #dde3ec;
+  --hover: #f3f6fa; --callout: #f3f6fa; --card: #ffffff; --link: #0b6bcb;
+  --accent: #0b6bcb; --shadow: 0 1px 2px rgba(11, 31, 58, 0.08), 0 0 0 1px #dde3ec;
+  --cover: linear-gradient(115deg, #0b1f3a 0%, #0b1f3a 55%, #123a6b 55%, #123a6b 70%, #0b6bcb 70%);
+  --gray-bg: #eef2f7; --gray-fg: #2a3f5c;
+  --blue-bg: #dbe9f8; --blue-fg: #0b3d74; --green-bg: #dcf0ea; --green-fg: #0d5a45;
+  --orange-bg: #fdebd6; --orange-fg: #7a4308; --purple-bg: #e6e3f6; --purple-fg: #3a2f7a;
+}
+[data-design="consulting"] body { font-family: "Segoe UI", Arial, sans-serif; }
+[data-design="consulting"] .cover { height: 22vh; }
+[data-design="consulting"] .page-icon { border-radius: 0; color: #0b1f3a; border-bottom: 4px solid var(--accent); }
+[data-design="consulting"] h1 { font-weight: 600; letter-spacing: -0.01em; }
+[data-design="consulting"] h2 {
+  border-bottom: none; padding-left: 14px; border-left: 4px solid var(--accent);
+  font-size: 1.35rem; text-transform: uppercase; letter-spacing: 0.06em;
+}
+[data-design="consulting"] .highlights { gap: 0; border: 1px solid var(--border); }
+[data-design="consulting"] .highlight { border: none; border-right: 1px solid var(--border); border-radius: 0; padding: 20px; }
+[data-design="consulting"] .highlight:last-child { border-right: none; }
+[data-design="consulting"] .highlight strong { color: #0b1f3a; font-size: 1.9rem; font-weight: 600; }
+[data-design="consulting"] .card, [data-design="consulting"] .service, [data-design="consulting"] .tag,
+[data-design="consulting"] .callout, [data-design="consulting"] .btn { border-radius: 2px; }
+[data-design="consulting"] .card-band { height: 70px; }
+[data-design="consulting"] .callout { border-left: 4px solid #0b1f3a; }
+
+/* ---------- 5. Earth: warm, natural, sustainability ---------- */
+:root[data-design="earth"] {
+  --bg: #f5f0e6; --text: #2c3529; --muted: #6f7566; --border: rgba(44, 53, 41, 0.12);
+  --hover: rgba(63, 107, 58, 0.07); --callout: #ebe3d3; --card: #fbf8f1; --link: #3f6b3a;
+  --accent: #3f6b3a; --shadow: 0 4px 18px rgba(44, 53, 41, 0.08);
+  --cover:
+    radial-gradient(ellipse at 15% 110%, #c9a27a 0%, transparent 45%),
+    radial-gradient(ellipse at 85% -10%, #a9c29a 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 60%, #6f9a64 0%, transparent 60%),
+    linear-gradient(160deg, #3f6b3a, #5c8452 50%, #d9c7a6);
+  --gray-bg: #e6dfcf; --gray-fg: #3e4636;
+  --blue-bg: #dde6e3; --blue-fg: #2c4a44; --green-bg: #dfe8d3; --green-fg: #2f4a26;
+  --orange-bg: #f1dcc4; --orange-fg: #6b3f16; --purple-bg: #e6dde3; --purple-fg: #4b3346;
+}
+[data-design="earth"] body { font-family: "Segoe UI", system-ui, sans-serif; }
+[data-design="earth"] h1, [data-design="earth"] h2 { font-family: Georgia, serif; font-weight: 600; }
+[data-design="earth"] .cover { height: 32vh; border-radius: 0 0 40px 40px; }
+[data-design="earth"] .page-icon { border-radius: 50%; color: var(--accent); background: var(--card); }
+[data-design="earth"] h2 { border-bottom: none; }
+[data-design="earth"] h2::after { content: ""; display: block; width: 48px; height: 3px; margin-top: 8px; border-radius: 3px; background: #c9a27a; }
+[data-design="earth"] .card, [data-design="earth"] .service, [data-design="earth"] .highlight, [data-design="earth"] .callout { border-radius: 16px; }
+[data-design="earth"] .card { box-shadow: var(--shadow); }
+[data-design="earth"] .service, [data-design="earth"] .highlight { background: var(--card); border: none; box-shadow: var(--shadow); }
+[data-design="earth"] .tag, [data-design="earth"] .btn { border-radius: 999px; padding: 0 10px; }
+[data-design="earth"] .btn { padding: 8px 18px; }
