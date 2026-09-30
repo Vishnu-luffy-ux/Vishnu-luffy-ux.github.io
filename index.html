@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description" content="Research, sustainable finance and ESG portfolio" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span class="crumb" id="crumb"></span>
+    <button class="ghost-btn" id="theme-toggle" aria-label="Toggle dark mode">Dark mode</button>
+  </div>
+
+  <div class="cover"></div>
+
+  <main class="page">
+    <div class="page-icon" id="page-icon"></div>
+    <h1 id="name"></h1>
+    <p class="headline" id="headline"></p>
+
+    <div class="props" id="props"></div>
+
+    <div class="callout">
+      <div class="callout-mark">i</div>
+      <p id="summary"></p>
+    </div>
+
+    <div class="highlights" id="highlights"></div>
+
+    <h2 id="work">Selected work</h2>
+    <div class="view-tabs" id="filters"></div>
+    <div class="gallery" id="gallery"></div>
+
+    <h2 id="experience">Experience</h2>
+    <div id="experience-list"></div>
+
+    <h2 id="skills">Skills</h2>
+    <div class="skills" id="skills-list"></div>
+
+    <h2 id="education">Education</h2>
+    <div id="education-list"></div>
+
+    <h3 class="sub">Certifications</h3>
+    <ul class="bullets" id="cert-list"></ul>
+
+    <h3 class="sub">Languages</h3>
+    <p id="languages"></p>
+
+    <div class="divider"></div>
+
+    <h2 id="contact">Contact</h2>
+    <div class="contact" id="contact-list"></div>
+
+    <footer class="footer" id="footer"></footer>
+  </main>
+
+  <aside class="peek" id="peek" aria-hidden="true">
+    <div class="peek-bar">
+      <span class="muted">Case study</span>
+      <button class="ghost-btn" id="peek-close" aria-label="Close">Close</button>
+    </div>
+    <div class="peek-body" id="peek-body"></div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
