@@ -4,7 +4,7 @@ const PORTFOLIO = {
   initials: "VP",
   headline: "ESG Business Development · Customer Success · CSR & Sustainable Finance",
   properties: [
-    { label: "Open to", tags: ["Business Development", "Customer Success", "Platform Coordinator", "ESG Consulting"] },
+    { label: "Open to", tags: ["Business Development", "Customer Success", "Platform Coordinator", "ESG Consulting", "ESG Research & Data Analysis"] },
     { label: "Domains", tags: ["ESG & BRSR", "CSR & Impact", "Sustainable & Climate Finance"] },
     { label: "Education", text: "M.A. Natural Resources & Governance, TISS Hyderabad (Climate Futures)" },
     { label: "Location", text: "Kerala, India · Open to relocation" },
@@ -15,7 +15,7 @@ const PORTFOLIO = {
   resumeUrl: "",
 
   summary:
-    "I understand ESG and CSR work from the client's side. At PwC I evaluated NGO proposals, managed 4 CSR projects across Telangana, collected and validated beneficiary data across 95 projects for global reporting, and ran a volunteering programme that logged 960 hours. That is the same data collection, reporting and stakeholder work that ESG and CSR platforms are built to simplify. I also bring subject depth: an M.A. in Natural Resources & Governance (Climate Futures) from TISS Hyderabad, and research on BRSR disclosures, green bonds, carbon markets and CBAM. I'm looking for business development, customer success and platform roles at ESG, CSR and climate-tech companies, where I can find the right clients, get them onboarded and keep them successful.",
+    "I understand ESG and CSR work from the client's side. At PwC I evaluated NGO proposals, managed 4 CSR projects across Telangana, collected and validated beneficiary data across 95 projects for global reporting, and ran a volunteering programme that logged 960 hours. That is the same data collection, reporting and stakeholder work that ESG and CSR platforms are built to simplify. I also bring subject depth: an M.A. in Natural Resources & Governance (Climate Futures) from TISS Hyderabad, and research on BRSR disclosures, green bonds, carbon markets and CBAM. I'm looking for business development, customer success, platform and research roles at ESG, CSR and climate-tech companies, where I can find the right clients, get them onboarded, keep them successful, and back it all with solid data.",
 
   highlights: [
     { value: "4.25×", label: "sovereign green bond issuance vs India's entire corporate green bond market" },
@@ -57,9 +57,9 @@ const PORTFOLIO = {
       evidence: ["CSR Portfolio Monitoring & Data Validation"],
     },
     {
-      title: "Research & insight",
-      text: "Sector research, feasibility and financing-scheme mapping, risk registers, and whitepapers that turn analysis into client-ready insight.",
-      evidence: ["Environmental Product Declaration Benchmarking", "India's Bamboo Economy: Risk & Finance"],
+      title: "Research & data analysis",
+      text: "Building structured datasets from company reports and public registers, validating and benchmarking the data, and turning it into clear findings, dashboards and whitepapers.",
+      evidence: ["Cross-Sector Emissions Benchmarking Model", "Environmental Product Declaration Benchmarking", "Beyond the Benchmark: India's Green Bond Market"],
     },
   ],
 
