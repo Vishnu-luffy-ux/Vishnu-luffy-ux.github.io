@@ -2,9 +2,10 @@
 const PORTFOLIO = {
   name: "Vishnu Priyadharsan R",
   initials: "VP",
-  headline: "ESG · Sustainable & Climate Finance · CSR · Research",
+  headline: "ESG Business Development · Customer Success · CSR & Sustainable Finance",
   properties: [
-    { label: "Focus", tags: ["BRSR & ESG Data", "Green & Transition Finance", "Financed Emissions", "CSR & Impact"] },
+    { label: "Open to", tags: ["Business Development", "Customer Success", "Platform Coordinator", "ESG Consulting"] },
+    { label: "Domains", tags: ["ESG & BRSR", "CSR & Impact", "Sustainable & Climate Finance"] },
     { label: "Education", text: "M.A. Natural Resources & Governance, TISS Hyderabad (Climate Futures)" },
     { label: "Location", text: "Kerala, India · Open to relocation" },
     { label: "Status", status: "Available immediately" },
@@ -14,7 +15,7 @@ const PORTFOLIO = {
   resumeUrl: "",
 
   summary:
-    "I'm an ESG and sustainable finance professional with an M.A. in Natural Resources & Governance (Climate Futures) from TISS Hyderabad. My interest is in how sustainability performance and climate risk shape where capital goes, whether that's through BRSR and ESG disclosures, green and transition finance, carbon markets, or CSR funding. At PwC I worked on the funder side of CSR: evaluating NGO proposals, monitoring 4 projects across Telangana, and validating beneficiary data across 95 projects for global reporting. My research asks why India's sovereign green bonds didn't build a corporate market, how carbon pricing and the EU's CBAM expose Indian industry, and how well banks disclose their financed emissions. I bring careful research, clean data work and clear writing to ESG advisory, research and business development teams.",
+    "I understand ESG and CSR work from the client's side. At PwC I evaluated NGO proposals, managed 4 CSR projects across Telangana, collected and validated beneficiary data across 95 projects for global reporting, and ran a volunteering programme that logged 960 hours. That is the same data collection, reporting and stakeholder work that ESG and CSR platforms are built to simplify. I also bring subject depth: an M.A. in Natural Resources & Governance (Climate Futures) from TISS Hyderabad, and research on BRSR disclosures, green bonds, carbon markets and CBAM. I'm looking for business development, customer success and platform roles at ESG, CSR and climate-tech companies, where I can find the right clients, get them onboarded and keep them successful.",
 
   highlights: [
     { value: "4.25×", label: "sovereign green bond issuance vs India's entire corporate green bond market" },
@@ -25,6 +26,16 @@ const PORTFOLIO = {
 
   // Each "evidence" entry must match a project title below.
   services: [
+    {
+      title: "Client acquisition & market mapping",
+      text: "Mapping who needs ESG and CSR support and why now, writing proposals and concept notes, and presenting to senior decision-makers.",
+      evidence: ["India's Bamboo Economy: Risk & Finance", "CSR Portfolio Monitoring & Data Validation"],
+    },
+    {
+      title: "Client onboarding & success",
+      text: "Coordinating stakeholders, collecting and validating data from many sources, tracking milestones, and running regular reviews with management.",
+      evidence: ["CSR Portfolio Monitoring & Data Validation"],
+    },
     {
       title: "ESG reporting & BRSR",
       text: "Reviewing BRSR and BRSR Core disclosures, finding data gaps and methodology changes, benchmarking against peers.",
@@ -46,14 +57,33 @@ const PORTFOLIO = {
       evidence: ["CSR Portfolio Monitoring & Data Validation"],
     },
     {
-      title: "Research, proposals & BD",
-      text: "Concept notes, feasibility and financing-scheme mapping, risk registers, and client-ready decks.",
-      evidence: ["India's Bamboo Economy: Risk & Finance", "Environmental Product Declaration Benchmarking"],
+      title: "Research & insight",
+      text: "Sector research, feasibility and financing-scheme mapping, risk registers, and whitepapers that turn analysis into client-ready insight.",
+      evidence: ["Environmental Product Declaration Benchmarking", "India's Bamboo Economy: Risk & Finance"],
     },
   ],
 
   // type: "Research" | "Analysis" | "Consulting"
   projects: [
+    {
+      title: "CSR Portfolio Monitoring & Data Validation",
+      type: "Consulting",
+      org: "PwC · Hyderabad · Dec 2025 – Jun 2026",
+      metric: "95 projects validated · 960 volunteer hours",
+      tags: ["CSR", "Stakeholder Management", "Audit-Ready Data"],
+      problem:
+        "PwC's global reporting depends on accurate, audit-ready beneficiary data from CSR projects across India, collected from many NGOs and regional teams.",
+      approach: [
+        "Managed 4 concurrent CSR projects in Telangana through field visits, monitoring and feasibility assessment.",
+        "Worked with NGO Directors and CEOs to strengthen implementation plans, then presented projects to PwC's CSR Trustees for funding approval.",
+        "Tracked CAPEX/OPEX use, milestones and risk flags in monthly and quarterly management reviews.",
+      ],
+      findings: [
+        "Led beneficiary data review across 95 All-India projects, cross-verifying regional submissions and advising on calculation methods for complex, multi-component projects.",
+        "Ran the Hyderabad volunteering programme end to end, from NGO partners to inductions and training, logging 960 hours of employee volunteering.",
+      ],
+      link: "",
+    },
     {
       title: "Beyond the Benchmark: India's Green Bond Market",
       type: "Research",
@@ -137,25 +167,6 @@ const PORTFOLIO = {
         "Green finance funds already-clean assets. A plant cutting emissions 40% doesn't qualify, and India has no official definition of 'transition'.",
         "There is a tenor mismatch: bank loans run 5–7 years, while decarbonising a plant takes 15–20.",
         "Recommended aligning transition plans to PAT and SBTi sector pathways now, using sustainability-linked loans and bonds (as Tata Steel and JSW have), and commissioning independent verification of transition plans.",
-      ],
-      link: "",
-    },
-    {
-      title: "CSR Portfolio Monitoring & Data Validation",
-      type: "Consulting",
-      org: "PwC · Hyderabad · Dec 2025 – Jun 2026",
-      metric: "95 projects validated · 960 volunteer hours",
-      tags: ["CSR", "Impact Measurement", "Audit-Ready Data"],
-      problem:
-        "PwC's global reporting depends on accurate, audit-ready beneficiary data from CSR projects across India.",
-      approach: [
-        "Managed 4 concurrent CSR projects in Telangana through field visits, monitoring and feasibility assessment.",
-        "Evaluated NGO proposals and presented projects to PwC's CSR Trustees for funding approval.",
-        "Tracked CAPEX/OPEX use, milestones and risk flags in monthly and quarterly management reviews.",
-      ],
-      findings: [
-        "Led beneficiary data review across 95 All-India projects and advised on calculation methods for complex, multi-component projects.",
-        "Ran the Hyderabad volunteering programme, which logged 960 hours of employee volunteering.",
       ],
       link: "",
     },
