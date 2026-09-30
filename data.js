@@ -2,9 +2,9 @@
 const PORTFOLIO = {
   name: "Vishnu Priyadharsan R",
   initials: "VP",
-  headline: "Research & Policy Analysis · Sustainable & Impact Finance · ESG",
+  headline: "ESG · Sustainable & Climate Finance · CSR · Research",
   properties: [
-    { label: "Focus", tags: ["Green Bonds", "Carbon Markets", "ESG", "Climate Policy"] },
+    { label: "Focus", tags: ["BRSR & ESG Data", "Green & Transition Finance", "Financed Emissions", "CSR & Impact"] },
     { label: "Education", text: "M.A. Natural Resources & Governance, TISS Hyderabad (Climate Futures)" },
     { label: "Location", text: "Kerala, India · Open to relocation" },
     { label: "Status", status: "Available immediately" },
@@ -14,54 +14,148 @@ const PORTFOLIO = {
   resumeUrl: "",
 
   summary:
-    "Research and sustainability professional working at the intersection of climate policy and finance. I analyse large datasets, run sector-wide assessments, and turn evidence into structured reports and policy recommendations, with applied work across sustainable finance, carbon markets, governance, and development-sector projects.",
+    "I work where ESG data meets capital. I read disclosures critically, turn messy data into decision-ready analysis, and explain what it means for companies, lenders and investors. My background covers BRSR analysis, financed-emissions gaps in bank disclosures, green bond and transition finance research, and funder-side CSR at PwC.",
 
   highlights: [
-    { value: "350+", label: "listed companies mapped for emissions & CBAM exposure" },
+    { value: "4.25×", label: "sovereign green bond issuance vs India's entire corporate green bond market" },
     { value: "2,900", label: "Environmental Product Declarations benchmarked" },
-    { value: "95", label: "CSR projects validated for global reporting at PwC" },
-    { value: "Rs 57,697 Cr", label: "sovereign green bond programme analysed" },
+    { value: "95", label: "CSR projects' beneficiary data validated at PwC" },
+    { value: "2 banks", label: "BRSR FY25 disclosures benchmarked on financed emissions" },
   ],
 
-  // type: "Research" | "Consulting" | "Analysis"
+  // Each "evidence" entry must match a project title below.
+  services: [
+    {
+      title: "ESG reporting & BRSR",
+      text: "Reviewing BRSR and BRSR Core disclosures, finding data gaps and methodology changes, benchmarking against peers.",
+      evidence: ["ICICI vs HDFC: BRSR & Financed Emissions Review", "Cross-Sector Emissions Benchmarking Model"],
+    },
+    {
+      title: "Sustainable & transition finance",
+      text: "Green bonds, greenium, taxonomies, sustainability-linked instruments, and why capital does or doesn't flow.",
+      evidence: ["Beyond the Benchmark: India's Green Bond Market", "Transition Finance for Steel & Cement"],
+    },
+    {
+      title: "Carbon markets & climate risk",
+      text: "Carbon-price scenarios, CBAM exposure, PCAF financed emissions, and India's CCTS design.",
+      evidence: ["Designing a Credible Carbon Market for India", "ICICI vs HDFC: BRSR & Financed Emissions Review"],
+    },
+    {
+      title: "CSR & impact",
+      text: "Evaluating proposals, monitoring projects, validating beneficiary data, and preparing audit-ready reports.",
+      evidence: ["CSR Portfolio Monitoring & Data Validation"],
+    },
+    {
+      title: "Research, proposals & BD",
+      text: "Concept notes, feasibility and financing-scheme mapping, risk registers, and client-ready decks.",
+      evidence: ["India's Bamboo Economy: Risk & Finance", "Environmental Product Declaration Benchmarking"],
+    },
+  ],
+
+  // type: "Research" | "Analysis" | "Consulting"
   projects: [
     {
       title: "Beyond the Benchmark: India's Green Bond Market",
       type: "Research",
       org: "Capstone · TISS Hyderabad · 2026",
-      metric: "Greenium fell from 9 bps to zero",
+      metric: "Greenium fell from ~9 bps to zero",
       tags: ["Green Bonds", "Sustainable Finance", "Policy Design"],
       problem:
-        "India has issued Rs 57,697 Cr of Sovereign Green Bonds, yet the domestic corporate green bond market reached only Rs 11,229 Cr across eight years. Why did the sovereign programme fail to catalyse corporate issuance?",
+        "India raised about Rs 57,697 Cr through Sovereign Green Bonds from January 2023, and they were expected to kick-start a domestic corporate green bond market. Did they?",
       approach: [
-        "Built the primary dataset from SEBI's ESG Debt Securities register.",
-        "Tracked the sovereign greenium across auctions to December 2024.",
-        "Applied a Policy Architecture Approach with comparative cases: France (OAT 2017) and Indonesia (Green Sukuk 2018).",
+        "Diagnostic policy study combining document analysis, quantitative trend analysis and comparative analysis.",
+        "Built the data from official sources only: SEBI's ESG Debt Securities register, RBI auction results and DEA issuance data.",
+        "Measured market development by issuer breadth (number and sectoral spread of new corporate issuers), not volume. Volume misleads in a concentrated market.",
+        "Used France (OAT 2017) and Indonesia (Green Sukuk 2018) as comparators, since both built supporting architecture before or alongside their sovereign bond.",
       ],
       findings: [
-        "The greenium collapsed from 9 bps to zero, removing the pricing signal the sovereign benchmark was meant to create.",
-        "Gaps in market architecture, not issuance volume, explain the weak corporate response.",
-        "Proposed five costed, feasible policy interventions to activate domestic corporate issuance.",
+        "The sovereign became the market instead of catalysing it: it issued about 4.25× the entire domestic corporate green bond market (Rs 11,229 Cr across 29 issuances since 2017).",
+        "Issuer breadth did not improve. New entrants were municipal bodies and REITs driven by their own regulations, with no hard-to-abate, SME or mid-cap issuers.",
+        "The greenium eroded from a ~9 bps peak. RBI cancelled an auction in May 2024 and the December 2024 auction cleared at G-Sec parity.",
+        "India lacked the preconditions that worked elsewhere: a taxonomy, disclosure-driven green demand, fiscal incentives, and regulator coordination.",
+        "Proposed five costed interventions, each assigned to the body that has the mandate: operationalise the taxonomy, set up a green finance sub-committee under FSDC, give tax incentives to green bond investors, create a credit guarantee for first-time issuers, and subsidise verification for small issues.",
+      ],
+      link: "",
+    },
+    {
+      title: "ICICI vs HDFC: BRSR & Financed Emissions Review",
+      type: "Analysis",
+      org: "Case assignment · April 2026",
+      metric: "Neither bank discloses full financed emissions",
+      tags: ["BRSR", "PCAF", "Banking", "Greenwashing Risk"],
+      problem:
+        "For a bank, financed emissions (Scope 3, Category 15) usually dwarf operational emissions. How well do two of India's largest private banks disclose what actually matters in their FY2024-25 BRSRs?",
+      approach: [
+        "Used primary filings only: both banks' BRSR FY2024-25 and annual reports, with no aggregator or rating-agency summaries.",
+        "Asked three questions throughout: what was stated vs. delivered, what is absent that should be present, and what year-on-year movement really reveals.",
+        "Compared material priorities, disclosure depth, how well strategy and metrics line up, assurance, and ambition.",
+      ],
+      findings: [
+        "HDFC disclosed 23.8 MtCO₂e of financed emissions on only ~Rs 1.90 lakh Cr of a Rs 26.19 lakh Cr advances book. ICICI disclosed none.",
+        "HDFC's apparent 45% improvement in carbon intensity came from a methodology revision in a footnote, not from operational change.",
+        "HDFC's 18.69% 'sustainable finance' share was mostly social loans (housing, MSME). Pure green loans were Rs 67,111 Cr, or 2.54% of advances, which creates greenwashing risk.",
+        "Both banks target Scope 1+2 carbon neutrality by FY2032 with no baseline, interim milestones or SBTi validation.",
+        "Recommended six 12-month actions, including publishing PCAF-based financed emissions by sector, releasing scenario-analysis outputs, and adopting ICMA-aligned green lending criteria.",
       ],
       link: "",
     },
     {
       title: "Designing a Credible Carbon Market for India",
       type: "Research",
-      org: "Independent research · TISS Hyderabad · 2026",
-      metric: "CBAM stress test at $10–$76/tCO₂",
-      tags: ["Carbon Markets", "CBAM", "Emissions Data"],
+      org: "Team capstone · TISS Hyderabad · 2026",
+      metric: "CBAM stress test at $10 / $30 / $50 / $76 per tCO₂",
+      tags: ["Carbon Markets", "CBAM", "CCTS", "Transition Risk"],
       problem:
-        "India is moving from the PAT scheme to a Carbon Credit Trading Scheme (CCTS) while the EU's CBAM puts a price on embedded carbon in exports. How concentrated are India's industrial emissions, and what does carbon pricing mean for exposed sectors?",
+        "India is moving from the PAT scheme to a compliance Carbon Credit Trading Scheme (CCTS) while the EU's CBAM prices the carbon embedded in imports. Is India's carbon market credible enough to hold a price signal and protect exporters?",
       approach: [
-        "Mapped firm-level Scope 1 and 2 disclosures across India's top 350 listed companies (Nifty 50, Next 50, Smallcap 250).",
-        "Built a scenario model pricing emissions at $10, $30, $50 and $76 per tonne.",
-        "Assessed market design using the Policy Triad framework: policy framework, institutions, and instruments.",
+        "Team project. I led the CBAM-exposure stress test and the policy diagnostic, and my collaborator led the firm-level emissions mapping.",
+        "Mapped disclosed Scope 1 and 2 emissions across India's top ~350 listed companies to test how concentrated emissions are.",
+        "Estimated sector exposure (steel, aluminium, cement, fertilisers, power) at four carbon prices, from a low domestic price up to roughly the EU level.",
+        "Assessed CCTS with the Policy Triad: policy framework, institutions (BEE, Ministry of Power, MoEFCC), and instruments.",
       ],
       findings: [
-        "Emissions are structurally concentrated in power, metals & mining, construction, and oil & gas, and within a small set of large firms.",
-        "Steel and aluminium face material CBAM liabilities as prices approach EU-referenced levels.",
-        "Credibility depends on coherent design: policy ambiguity, fragmented governance, and incomplete MRV and price-stabilisation tools are the key gaps.",
+        "Emissions are structurally concentrated in power, metals & mining, construction and oil & gas, and within a small set of large firms. A price aimed at them covers most of the problem.",
+        "CBAM exposure is material for steel and aluminium and rises steeply as prices approach EU levels.",
+        "CBAM deducts carbon prices already paid at home, so a credible CCTS keeps that revenue in India. That makes it defensive economic policy as well as climate policy.",
+        "Credibility depends on design coherence. Fragmented institutions and incomplete MRV and price-stabilisation tools are the main gaps.",
+      ],
+      link: "",
+    },
+    {
+      title: "Transition Finance for Steel & Cement",
+      type: "Analysis",
+      org: "Strategy brief · May 2026",
+      metric: "Green finance funds what's clean, not the journey",
+      tags: ["Transition Finance", "SLL / SLB", "Hard-to-Abate"],
+      problem:
+        "Steel and cement produce about 21% of India's industrial emissions, and clean alternatives cost several times more. Why isn't climate capital reaching them?",
+      approach: [
+        "Diagnosed the financing gap rather than the technology gap, using IEA, CPI, GFANZ and RBI sources.",
+        "Mapped the barriers from a lender's view: category, definitions, tenor and instruments.",
+      ],
+      findings: [
+        "Green finance funds already-clean assets. A plant cutting emissions 40% doesn't qualify, and India has no official definition of 'transition'.",
+        "There is a tenor mismatch: bank loans run 5–7 years, while decarbonising a plant takes 15–20.",
+        "Recommended aligning transition plans to PAT and SBTi sector pathways now, using sustainability-linked loans and bonds (as Tata Steel and JSW have), and commissioning independent verification of transition plans.",
+      ],
+      link: "",
+    },
+    {
+      title: "CSR Portfolio Monitoring & Data Validation",
+      type: "Consulting",
+      org: "PwC · Hyderabad · Dec 2025 – Jun 2026",
+      metric: "95 projects validated · 960 volunteer hours",
+      tags: ["CSR", "Impact Measurement", "Audit-Ready Data"],
+      problem:
+        "PwC's global reporting depends on accurate, audit-ready beneficiary data from CSR projects across India.",
+      approach: [
+        "Managed 4 concurrent CSR projects in Telangana through field visits, monitoring and feasibility assessment.",
+        "Evaluated NGO proposals and presented projects to PwC's CSR Trustees for funding approval.",
+        "Tracked CAPEX/OPEX use, milestones and risk flags in monthly and quarterly management reviews.",
+      ],
+      findings: [
+        "Led beneficiary data review across 95 All-India projects and advised on calculation methods for complex, multi-component projects.",
+        "Ran the Hyderabad volunteering programme, which logged 960 hours of employee volunteering.",
       ],
       link: "",
     },
@@ -72,7 +166,7 @@ const PORTFOLIO = {
       metric: "6 companies · 20 ESG data fields",
       tags: ["ESG Data", "Scope 1-2-3", "Excel"],
       problem:
-        "Corporate emissions disclosures vary widely in scope, methodology, and assurance, which makes like-for-like comparison difficult.",
+        "Corporate emissions disclosures vary in scope, methodology and assurance, which makes like-for-like comparison difficult.",
       approach: [
         "Built a structured dataset for Tata Steel, ArcelorMittal, IOCL, Shell, Unilever and Microsoft from integrated and BRSR reports.",
         "Captured Scope 1, 2 and 3 emissions, Scope 3 share, revenue, EBITDA and production to derive intensity metrics.",
@@ -85,40 +179,21 @@ const PORTFOLIO = {
       link: "",
     },
     {
-      title: "CSR Portfolio Monitoring & Data Validation",
-      type: "Consulting",
-      org: "PwC · Hyderabad · Dec 2025 – Jun 2026",
-      metric: "95 projects validated · 960 volunteer hours",
-      tags: ["CSR", "Impact Measurement", "Stakeholder Engagement"],
-      problem:
-        "PwC's global reporting depends on accurate, audit-ready beneficiary data from CSR projects across India.",
-      approach: [
-        "Managed 4 concurrent CSR projects in Telangana through field visits, monitoring, and feasibility assessment.",
-        "Evaluated NGO proposals and presented projects to PwC's CSR Trustees for funding approval.",
-        "Tracked CAPEX/OPEX use, milestones, and risk flags in monthly and quarterly management reviews.",
-      ],
-      findings: [
-        "Led beneficiary data review across 95 All-India projects and advised on calculation methods for complex, multi-component projects.",
-        "Ran the Hyderabad volunteering programme, which logged 960 hours of employee volunteering.",
-      ],
-      link: "",
-    },
-    {
       title: "India's Bamboo Economy: Risk & Finance",
       type: "Consulting",
       org: "ISB Research · Corporate Chanakya · 2025",
       metric: "Sector risk register + state project proposal",
-      tags: ["Risk Assessment", "Value Chains", "Public Finance"],
+      tags: ["Risk Assessment", "Proposals", "Public Finance"],
       problem:
-        "India's bamboo sector has high potential but is held back by overlapping governance, regulatory gaps, and supply-chain risk.",
+        "India's bamboo sector has high potential but is held back by overlapping governance, regulatory gaps and supply-chain risk.",
       approach: [
         "ISB: mapped governance overlaps across ministries, state agencies, NGOs and financial institutions.",
         "Built a risk register with likelihood-impact ratings across operational, regulatory, market and supply-chain risks.",
-        "Corporate Chanakya: developed a proposal and concept note for a hi-tech bamboo nursery lab for the State of Goa.",
+        "Corporate Chanakya: wrote the proposal and concept note for a hi-tech bamboo nursery lab for the State of Goa.",
       ],
       findings: [
         "Wrote mitigation strategies for each risk category, which fed into a policy report for ISB faculty.",
-        "Identified financing routes through MNRE and the National Bamboo Mission, and presented the feasibility findings to senior management.",
+        "Identified financing routes through MNRE and the National Bamboo Mission, and presented feasibility findings to senior management.",
       ],
       link: "",
     },
@@ -130,10 +205,7 @@ const PORTFOLIO = {
       tags: ["EPD", "Disclosure", "Whitepaper"],
       problem:
         "Environmental Product Declarations are becoming central to green procurement, but disclosure practices differ widely across sectors and registries.",
-      approach: [
-        "Analysed 2,900 EPDs from international registries.",
-        "Benchmarked disclosure practices across sectors.",
-      ],
+      approach: ["Analysed 2,900 EPDs from international registries.", "Benchmarked disclosure practices across sectors."],
       findings: ["Wrote a whitepaper that turned the analysis into strategic insights for the firm."],
       link: "",
     },
@@ -158,7 +230,7 @@ const PORTFOLIO = {
       period: "Sep – Dec 2025",
       place: "Remote",
       points: [
-        "Developed the proposal and concept note for a hi-tech bamboo nursery lab for the State of Goa.",
+        "Wrote the proposal and concept note for a hi-tech bamboo nursery lab for the State of Goa.",
         "Mapped government financing schemes (MNRE, National Bamboo Mission) to find funding routes for the client.",
         "Ran stakeholder mapping, SWOT and risk assessments across bamboo value chains.",
       ],
@@ -183,10 +255,11 @@ const PORTFOLIO = {
   ],
 
   skills: [
-    { group: "Research", color: "blue", items: ["Policy Research", "Sector Analysis", "Literature Review", "Qual & Quant Analysis", "Risk Assessment", "Data Validation"] },
-    { group: "Sustainable Finance", color: "green", items: ["Green Bonds", "Carbon Markets", "CBAM", "ESG", "Impact Research"] },
-    { group: "Stakeholder & Projects", color: "orange", items: ["Stakeholder Engagement", "Field Research", "Project Monitoring", "Proposal Development"] },
-    { group: "Tools", color: "purple", items: ["Excel", "Python", "Power BI", "Tableau", "QGIS", "STATA", "AI-augmented workflows"] },
+    { group: "ESG frameworks", color: "green", items: ["BRSR / BRSR Core", "GHG Protocol", "PCAF", "ICMA Green Bond Principles", "TCFD / IFRS S2", "GRI"] },
+    { group: "Finance & markets", color: "blue", items: ["Green Bonds", "Sustainability-Linked Loans", "Carbon Markets (CCTS)", "CBAM", "Climate Taxonomies"] },
+    { group: "Analysis", color: "purple", items: ["Disclosure Gap Analysis", "Peer Benchmarking", "Scenario Analysis", "Risk Assessment", "Data Validation", "Policy Research"] },
+    { group: "Client & delivery", color: "orange", items: ["Proposals & Concept Notes", "Stakeholder Engagement", "Project Monitoring", "Client Presentations"] },
+    { group: "Tools", color: "gray", items: ["Excel", "Power BI", "Tableau", "Python", "QGIS", "STATA", "AI-augmented workflows"] },
   ],
 
   education: [

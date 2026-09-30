@@ -36,6 +36,21 @@
     $("highlights").appendChild(box);
   });
 
+  d.services.forEach((s) => {
+    const box = el("div", "service");
+    const links = el("div", "service-links");
+    s.evidence.forEach((title) => {
+      const i = d.projects.findIndex((p) => p.title === title);
+      if (i < 0) return;
+      const b = el("button", "evidence", `↗ ${title}`);
+      b.type = "button";
+      b.addEventListener("click", () => openPeek(i));
+      links.appendChild(b);
+    });
+    box.append(el("h4", null, s.title), el("p", "muted small", s.text), links);
+    $("services-list").appendChild(box);
+  });
+
   const types = ["All", ...new Set(d.projects.map((p) => p.type))];
   let active = "All";
   const renderGallery = () => {
