@@ -14,7 +14,7 @@ const PORTFOLIO = {
   resumeUrl: "",
 
   summary:
-    "I work where ESG data meets capital. I read disclosures critically, turn messy data into decision-ready analysis, and explain what it means for companies, lenders and investors. My background covers BRSR analysis, financed-emissions gaps in bank disclosures, green bond and transition finance research, and funder-side CSR at PwC.",
+    "I'm an ESG and sustainable finance professional with an M.A. in Natural Resources & Governance (Climate Futures) from TISS Hyderabad. My interest is in how sustainability performance and climate risk shape where capital goes, whether that's through BRSR and ESG disclosures, green and transition finance, carbon markets, or CSR funding. At PwC I worked on the funder side of CSR: evaluating NGO proposals, monitoring 4 projects across Telangana, and validating beneficiary data across 95 projects for global reporting. My research asks why India's sovereign green bonds didn't build a corporate market, how carbon pricing and the EU's CBAM expose Indian industry, and how well banks disclose their financed emissions. I bring careful research, clean data work and clear writing to ESG advisory, research and business development teams.",
 
   highlights: [
     { value: "4.25×", label: "sovereign green bond issuance vs India's entire corporate green bond market" },
@@ -255,11 +255,12 @@ const PORTFOLIO = {
   ],
 
   skills: [
-    { group: "ESG frameworks", color: "green", items: ["BRSR / BRSR Core", "GHG Protocol", "PCAF", "ICMA Green Bond Principles", "TCFD / IFRS S2", "GRI"] },
-    { group: "Finance & markets", color: "blue", items: ["Green Bonds", "Sustainability-Linked Loans", "Carbon Markets (CCTS)", "CBAM", "Climate Taxonomies"] },
-    { group: "Analysis", color: "purple", items: ["Disclosure Gap Analysis", "Peer Benchmarking", "Scenario Analysis", "Risk Assessment", "Data Validation", "Policy Research"] },
-    { group: "Client & delivery", color: "orange", items: ["Proposals & Concept Notes", "Stakeholder Engagement", "Project Monitoring", "Client Presentations"] },
-    { group: "Tools", color: "gray", items: ["Excel", "Power BI", "Tableau", "Python", "QGIS", "STATA (basic)", "AI-augmented workflows"] },
+    { group: "ESG & reporting", color: "green", items: ["ESG Research", "BRSR / BRSR Core", "GRI", "GHG Protocol (Scope 1-2-3)", "TCFD / IFRS S2", "CSRD Fundamentals", "EPD Disclosure"] },
+    { group: "Sustainable & climate finance", color: "blue", items: ["Sustainable Finance", "Green Bonds (ICMA GBP)", "Sustainability-Linked Loans & Bonds", "Transition Finance", "Climate Taxonomies", "PCAF Financed Emissions", "Carbon Markets (CCTS)", "CBAM", "Impact Research"] },
+    { group: "CSR & impact", color: "orange", items: ["CSR Proposal Evaluation", "Project Monitoring", "CAPEX/OPEX & Fund Utilisation Tracking", "Beneficiary Data Validation", "Employee Volunteering Programmes", "Development-Sector Research"] },
+    { group: "Research & analysis", color: "purple", items: ["Primary & Secondary Research", "Policy Research", "Sector Analysis", "Literature Review", "Qualitative & Quantitative Analysis", "Disclosure Gap Analysis", "Peer Benchmarking", "Scenario & Stress Testing", "Risk Assessment", "Data Validation", "Field Research"] },
+    { group: "Client & delivery", color: "green", items: ["Stakeholder Engagement", "Stakeholder Mapping & SWOT", "Proposal & Concept Note Development", "Research Reporting & Whitepapers", "Management Reporting", "Client & Trustee Presentations"] },
+    { group: "Tools", color: "gray", items: ["Excel", "Power BI", "Tableau", "Python", "QGIS", "STATA (basic)", "Microsoft Fabric", "Microsoft Office", "AI-augmented workflows"] },
   ],
 
   education: [
