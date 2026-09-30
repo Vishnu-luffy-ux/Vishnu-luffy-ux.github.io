@@ -259,7 +259,7 @@ const PORTFOLIO = {
     { group: "Finance & markets", color: "blue", items: ["Green Bonds", "Sustainability-Linked Loans", "Carbon Markets (CCTS)", "CBAM", "Climate Taxonomies"] },
     { group: "Analysis", color: "purple", items: ["Disclosure Gap Analysis", "Peer Benchmarking", "Scenario Analysis", "Risk Assessment", "Data Validation", "Policy Research"] },
     { group: "Client & delivery", color: "orange", items: ["Proposals & Concept Notes", "Stakeholder Engagement", "Project Monitoring", "Client Presentations"] },
-    { group: "Tools", color: "gray", items: ["Excel", "Power BI", "Tableau", "Python", "QGIS", "STATA", "AI-augmented workflows"] },
+    { group: "Tools", color: "gray", items: ["Excel", "Power BI", "Tableau", "Python", "QGIS", "STATA (basic)", "AI-augmented workflows"] },
   ],
 
   education: [
